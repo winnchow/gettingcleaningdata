@@ -4,6 +4,9 @@ Codebook
 ## Processing performed on the raw data by the R script ##
 In the raw data, there are one training set and one test set. 
 
+- The training set has three files: subject\_train.txt, X\_train.txt and Y\_train.txt
+- The test set has three files: subject\_test.txt, X\_test.txt and Y\_test.txt
+
 The processing:
 
 1. The training and the test sets are merged to create one data set.
