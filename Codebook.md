@@ -4,6 +4,8 @@ Codebook
 ## Processing performed on the raw data by the R script ##
 In the raw data, there are one training set and one test set. 
 
+The processing:
+
 1. The training and the test sets are merged to create one data set.
 2. Only the measurements on the mean and standard deviation for each measurement are included in the output. 
 3. Activity labels are used to replace activity IDs, e.g. 1 becomes WALKING
