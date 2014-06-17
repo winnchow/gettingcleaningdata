@@ -35,7 +35,7 @@ The processing:
 1. The training and the test sets are merged to create one data set.
 2. Only the measurements on the mean and standard deviation for each measurement are included in the output. 
 3. Activity labels are used to replace activity IDs, e.g. 1 is replaced with WALKING
-4. The variable names are updated. The characters "()" are removed from the names. The character "-" is replaced with ".", e.g. tBodyAcc-mean()-X becomes tBodyAcc.mean.X.   
+4. The variable names are updated to make them valid R variable names. The characters "()" are removed from the names. The character "-" is replaced with ".", e.g. tBodyAcc-mean()-X becomes tBodyAcc.mean.X.   
 5. The data is aggregated by taking the average of each variable for each activity and each subject. 
 
 The output is stored in a variable named **tidyData**.
