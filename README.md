@@ -40,7 +40,7 @@ The processing:
 
 The output is stored in a variable named **tidyData**.
 
-Please refer to the Codebook.md for further details on variables of the output.
+Please refer to the Codebook.md for details on variables of the output.
 
 
 
