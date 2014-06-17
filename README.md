@@ -9,8 +9,6 @@ This repository contains the following files:
 
 ## To run the R script: ##
 
-Before running the R script, you have to download the raw data and unzip it in the working directory.
-
 The raw data is the data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 
 A full description is available at the site where the data was obtained: 
@@ -20,6 +18,8 @@ A full description is available at the site where the data was obtained:
 Here is the raw data:
 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+Before running the R script, you have to download the raw data and unzip it in the working directory.
 
 Then, you may run the R script, **run_analysis.R**. 
 
