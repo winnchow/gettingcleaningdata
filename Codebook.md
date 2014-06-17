@@ -1,22 +1,9 @@
 Codebook
 ===================
 
-## Processing performed on the raw data by the R script ##
-In the raw data, there are one training set and one test set. 
-
-- The training set has three files: subject\_train.txt, X\_train.txt and Y\_train.txt
-- The test set has three files: subject\_test.txt, X\_test.txt and Y\_test.txt
-
-The processing:
-
-1. The training and the test sets are merged to create one data set.
-2. Only the measurements on the mean and standard deviation for each measurement are included in the output. 
-3. Activity labels are used to replace activity IDs, e.g. 1 becomes WALKING
-4. The variable names are modified. The characters "()" are removed from the names. The character "-" is replaced with ".", e.g. tBodyAcc-mean()-X becomes tBodyAcc.mean.X.   
-5. The data is aggregated by taking the average of each variable for each activity and each subject. 
-6. The output is stored in a variable named **tidyData**.
-
 ## Data dictionary of the output ##
+
+The variables of the output:
 
 - subject : the subject, ID
 - activity : the activity label
@@ -71,3 +58,11 @@ All the following variables are aggregated by taking the average of each variabl
 - fBodyGyro.std.X : the standard deviation of body gyroscope in the X direction (frequency)
 - fBodyGyro.std.Y : the standard deviation of body gyroscope in the Y direction (frequency)
 - fBodyGyro.std.Z : the standard deviation of body gyroscope in the Z direction (frequency)
+
+## Original Data ##
+
+The raw data is the data collected from the accelerometers from the Samsung Galaxy S smartphone. 
+
+A full description is available at the site where the data was obtained: 
+
+[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 

@@ -5,11 +5,17 @@ This repository contains the following files:
 
 - **README.md** : A readme file
 - **run_analysis.R** : A R script for performing data processing on the data collected from the accelerometers from the Samsung Galaxy S smartphone
-- **Codebook.md** : A description of the processing performed on the raw data and the variables of the output
+- **Codebook.md** : A description of the variables of the output
 
 ## To run the R script: ##
 
 Before running the R script, you have to download the raw data and unzip it in the working directory.
+
+The raw data is the data collected from the accelerometers from the Samsung Galaxy S smartphone. 
+
+A full description is available at the site where the data was obtained: 
+
+[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 
 Here is the raw data:
 
@@ -17,7 +23,14 @@ Here is the raw data:
 
 Then, you may run the R script, **run_analysis.R**. 
 
+## Processing performed on the raw data by the R script: ##
+
 The R script will read in the training set and test set from the raw data and perform the following processing on the raw data.
+
+- The training set has three files: subject\_train.txt, X\_train.txt and Y\_train.txt
+- The test set has three files: subject\_test.txt, X\_test.txt and Y\_test.txt
+
+The processing:
 
 1. The training and the test sets are merged to create one data set.
 2. Only the measurements on the mean and standard deviation for each measurement are included in the output. 
@@ -27,7 +40,7 @@ The R script will read in the training set and test set from the raw data and pe
 
 The output is stored in a variable named **tidyData**.
 
-Please refer to the Codebook.md for further details on the processing and the output.
+Please refer to the Codebook.md for further details on variables of the output.
 
 
 
