@@ -8,7 +8,7 @@ This repository contains the following files:
 - **run_analysis.R**
 	- A R script for performing data processing on the data collected from the accelerometers from the Samsung Galaxy S smartphone
 - **Codebook.md**
-	- A description of the variables of the output
+	- A description of the processing performed on the raw data and the variables of the output
 
 ## To run the R script: ##
 
