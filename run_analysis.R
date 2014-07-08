@@ -51,10 +51,16 @@ alabels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 names(alabels) <- c("activity.id", "activity")
 
 # Uses descriptive activity names to name the activities in the data set
+ytrain$n <- 1:nrow(ytrain)
 ytrain2 <- merge(ytrain, alabels, by.x = "activity.id", by.y = "activity.id")
+# Restore orginal order
+ytrain2 <- ytrain2[order(ytrain2$n),]
 ytrain3 <- data.frame(ytrain2[, c("activity")])
 names(ytrain3) <- c("activity")
+ytest$n <- 1:nrow(ytest)
 ytest2 <- merge(ytest, alabels, by.x = "activity.id", by.y = "activity.id")
+# Restore orginal order
+ytest2 <- ytest2[order(ytest2$n),]
 ytest3 <- data.frame(ytest2[, c("activity")])
 names(ytest3) <- c("activity")
 
@@ -73,6 +79,8 @@ data <- rbind(train, test)
 
 # Calculates the average of each variable for each activity and each subject.
 tidyData <- aggregate(data[, !grepl('subject|activity', names(data))], by=data[, c("subject", "activity")], FUN=mean, na.rm=TRUE)
+# Order by subject
+tidyData <- tidyData[order(tidyData$subject),]
 
 # Write the tidy data to file
 # write.table(tidyData, file="./tidyData.txt", row.names=FALSE)
