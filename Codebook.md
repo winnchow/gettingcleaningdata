@@ -8,7 +8,7 @@ The variables of the output:
 - subject : the subject, ID
 - activity : the activity label
 
-All the following variables are aggregated by taking the average of each variable for each activity and each subject. All the variables are normalized and bounded within [-1,1] before aggregation. They have NO units.
+All the following variables are aggregated by taking the average of each variable for each activity and each subject. All the variables are normalized and bounded within [-1,1] before aggregation. Thus, they have NO units.
 
 - tBodyAcc.mean.X : the mean of body acceleration in the X direction (time)
 - tBodyAcc.mean.Y : the mean of body acceleration in the Y direction (time)
